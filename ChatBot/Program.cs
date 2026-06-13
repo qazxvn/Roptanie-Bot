@@ -13,7 +13,7 @@ var commandList = new List<IBotCommand>
 };
 
 using var cts = new CancellationTokenSource();
-var bot = new TelegramBotClient("8550020751:AAGRDL1q24yTi5dkkN-gj0UR-V6-e3agN5w", cancellationToken: cts.Token);
+var bot = new TelegramBotClient("", cancellationToken: cts.Token);
 
 bot.StartReceiving(
     updateHandler: OnUpdate,
